@@ -1,0 +1,19 @@
+{
+  "name": "rate-sites",
+  "version": "1.0.0",
+  "description": "project that generates two the sitemap and capture all images for comparison",
+  "main": "index.js",
+  "repository": "https://github.com/vitriber/rate-sites.git",
+  "author": "Vitor <vit.riber1@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "express": "^4.17.1",
+    "simplecrawler": "^1.1.8"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}
