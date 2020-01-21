@@ -1,26 +1,39 @@
-var Crawler = require('simplecrawler');
+module.exports = function getAllUrls(url){
 
-var port = 80;
-var exclude = ['gif', 'jpg', 'jpeg', 'png', 'ico', 'bmp', 'ogg', 'webp',
-  'mp4', 'webm', 'mp3', 'ttf', 'woff', 'json', 'rss', 'atom', 'gz', 'zip',
-  'rar', '7z', 'css', 'js', 'gzip', 'exe'];
-var exts = exclude.join('|');
-var regex = new RegExp('\.(' + exts + ')', 'i'); // This is used for filtering crawl items.
-var crawler = new Crawler('www.website.com'); 
+  var Crawler = require('simplecrawler');
 
-var pages = []; // This array will hold all the URLs
+  var port = 80;
+  var exclude = ['gif', 'jpg', 'jpeg', 'png', 'ico', 'bmp', 'ogg', 'webp',
+    'mp4', 'webm', 'mp3', 'ttf', 'woff', 'json', 'rss', 'atom', 'gz', 'zip',
+    'rar', '7z', 'css', 'js', 'gzip', 'exe', 'svg', 'xml'];
+  var exts = exclude.join('|');
+  var regex = new RegExp('\.(' + exts + ')', 'i'); // This is used for filtering crawl items.
+  var crawler = new Crawler(url); 
 
-// Crawler configuration
-crawler.initialPort = port;
-crawler.initalPath = '/';
+  var pages = []; // This array will hold all the URLs
 
-crawler.addFetchCondition(function (parsedURL) {
-  return !parsedURL.path.match(regex); // This will reject anything that's not a link.
-});
+  // Crawler configuration
+  crawler.initialPort = port;
+  crawler.initalPath = '/';
 
-// Run the crawler
-crawler.start();
+  crawler.addFetchCondition(function (parsedURL) {
+    return !parsedURL.path.match(regex); // This will reject anything that's not a link.
+  });
 
-crawler.on('fetchcomplete', function(item, responseBuffer, response) {
-  pages.push(item.url); // Add URL to the array of pages
-});
+  // Run the crawler
+  //console.log('> Process started');
+  crawler.start();
+
+  crawler.on('fetchcomplete', function(item, responseBuffer, response) {
+    //console.log(`> Page found ${item.url}`);
+    pages.push(item.url); // Add URL to the array of pages
+  });
+
+  crawler.on('complete', () => {
+    //console.log('> Process completed');
+    //console.log(pages);
+  });
+
+
+  return pages;
+}

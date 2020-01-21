@@ -17,7 +17,8 @@
     "simplecrawler": "^1.1.8"
   },
   "scripts": {
-    "dev": "nodemon src/crawler.js"
+    "dev": "nodemon src/crawler.js",
+    "debug": "nodemon src/crawler.js --inspect"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
