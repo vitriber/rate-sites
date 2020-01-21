@@ -1,11 +1,10 @@
 const {Router} = require('express');
+const SiteConstroller = require('./controllers/SiteController');
 
 
 const routes = Router();
 
-routes.get('/link', DevConstroller.index);
-routes.post('/link', DevConstroller.store);
-
-routes.get('/search', SearchConstroller.index);
+routes.get('/link', SiteConstroller.index);
+routes.post('/link', SiteConstroller.store);
 
 module.exports = routes;
