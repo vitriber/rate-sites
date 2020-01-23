@@ -13,12 +13,13 @@
     "crawler": "^1.2.1",
     "express": "^4.17.1",
     "mongoose": "^5.8.9",
+    "puppeteer": "^2.0.0",
     "routes": "^2.1.0",
     "simplecrawler": "^1.1.8"
   },
   "scripts": {
-    "dev": "nodemon src/crawler.js",
-    "debug": "nodemon src/crawler.js --inspect"
+    "dev": "nodemon src/index.js",
+    "debug": "nodemon src/index.js --inspect"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

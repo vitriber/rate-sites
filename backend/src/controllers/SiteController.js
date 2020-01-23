@@ -1,6 +1,7 @@
 const axios = require('axios');
 const Site = require('../models/Site');
 const GetSites = require('../crawler');
+const GetImages = require('../screenshot');
 
 module.exports = {
     async index(request, response){
@@ -11,10 +12,15 @@ module.exports = {
 
     async store(request, response) {
         const{ blogUrl} = request.body;
+        console.log(blogUrl);
 
         let site = await Site.findOne({blogUrl});
 
-        const sitemap = GetSites.getAllUrls(blogUrl);
+        const sitemap = await GetSites.getAllUrls(blogUrl);
+
+        sitemap.map(
+            GetImages.getImages(sitemap)
+        );
 
         site = await Site.create({
             blogUrl,

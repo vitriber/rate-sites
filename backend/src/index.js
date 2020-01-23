@@ -5,7 +5,7 @@ const http = require('http');
 const routes = require('./routes')
 const app = express();
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0-gq0rh.mongodb.net/week10?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://admin:admin@cluster0-gq0rh.mongodb.net/rate-sites?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -14,4 +14,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-express.listen(3333);
+app.listen(3333, () => {
+    console.log('> Server started')
+});
