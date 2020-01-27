@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-function DevItem({dev}){
+function SiteItem({dev}){
     return(
         <li className= "dev-item">
               <header>
@@ -18,4 +18,4 @@ function DevItem({dev}){
     );
 }
 
-export default DevItem;
+export default SiteItem;

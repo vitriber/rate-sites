@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import './styles.css'
 
-function DevForm({onSubmit}){
+function SiteForm({onSubmit}){
     const [github_username, setGithubUsername] = useState('');
     const [techs, setTechs] = useState('');
   
@@ -81,4 +81,4 @@ function DevForm({onSubmit}){
     );
 }
 
-export default DevForm;
+export default SiteForm;

@@ -7,8 +7,8 @@ import './App.css'
 import './Sidebar.css'
 import './Main.css'
 
-import DevForm from './components/DevForm'
-import DevItem from './components/DevItem/'
+import SiteForm from './components/SiteForm'
+import SiteItem from './components/SiteItem'
 
 
 // Componente: Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
@@ -40,12 +40,12 @@ const [devs, setDevs] = useState([]);
     <div id="app">
       <aside>
         <strong>Rockstage</strong>
-        <DevForm onSubmit={handleAddDev}/>
+        <SiteForm onSubmit={handleAddDev}/>
       </aside>
       <main>
         <ul>
           {devs.map(dev => (
-            <DevItem key={dev._id} dev={dev} />
+            <SiteItem key={dev._id} dev={dev} />
           ))}         
         </ul>
       </main>

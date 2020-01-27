@@ -18,9 +18,9 @@ module.exports = {
 
         const sitemap = await GetSites.getAllUrls(blogUrl);
 
-        sitemap.map(
-            GetImages.getImages(sitemap)
-        );
+        sitemap.map(site => (
+            GetImages.getImages(site)
+        ));
 
         site = await Site.create({
             blogUrl,

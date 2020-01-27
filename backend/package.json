@@ -15,7 +15,8 @@
     "mongoose": "^5.8.9",
     "puppeteer": "^2.0.0",
     "routes": "^2.1.0",
-    "simplecrawler": "^1.1.8"
+    "simplecrawler": "^1.1.8",
+    "uuid": "^3.4.0"
   },
   "scripts": {
     "dev": "nodemon src/index.js",
