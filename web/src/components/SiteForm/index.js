@@ -1,83 +1,77 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
+
+import { Form, Button, Container, Col, Row } from 'react-bootstrap';
 
 import './styles.css'
 
 function SiteForm({onSubmit}){
-    const [github_username, setGithubUsername] = useState('');
-    const [techs, setTechs] = useState('');
+    const [linkFirst, setLinkFirst] = useState('');
+    const [linkSecond, setLinkSecond] = useState('');
   
-    const [latitude, setLatitude] = useState('');
-    const [longitude, setLongitude] = useState('');
 
-    useEffect(() => {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            const {latitude, longitude} = position.coords;
-    
-            setLatitude(latitude);
-            setLongitude(longitude);
-    
-          },
-          (err) => {
-            console.log(err);
-          },
-          {
-            timeout: 3000,
-          }
-        );
-      }, [])
+    async function handleSubmit(e){
+      e.preventDefault(); 
 
-      async function handleSubmit(e){
-        e.preventDefault(); 
+      await onSubmit({
+          linkFirst,
+          linkSecond,
+        });
 
-        await onSubmit({
-            github_username,
-            techs,
-            latitude,
-            longitude,
-          });
-
-        setGithubUsername('');
-        setTechs('');
-      }
+        setLinkFirst('');
+        setLinkSecond('');
+    }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <div className="input-block">
-              <label htmlFor="github_username">Link 1 Site</label>
-              <input 
-                name="github_username" 
-                id="username_github" 
-                required
-                value={github_username}
-                onChange={e => setGithubUsername(e.target.value)}
-              />
-            </div>
-            <div className="input-block">
-              <label htmlFor="techs">Link 2 Site</label>
-              <input 
-                name="techs" 
-                id="techs" 
-                required
-                value={techs}
-                onChange={e => setTechs(e.target.value)}
-              />
-            </div>
-            <div className="input-group">
-              <div className="input-block">
-                <label htmlFor="latitude">Nota performance</label>
-                <input 
-                  type="number" 
-                  name="latitude" 
-                  id="latitude" 
-                  value={latitude}
-                  onChange={e => setLatitude(e.target.value)}
-                />
-              </div>
-            </div>
+        <Container>
+           <Form onSubmit={handleSubmit}>
+              <Row>
+                <Col xs="6" id="form-rate-sites">
+                  <Form.Group controlId="formLinkFirst">
+                    <Form.Label>Link 1</Form.Label>
+                    <Form.Control 
+                      type="text" 
+                      placeholder="Entre com o primeiro link"
+                      value={linkFirst}
+                      onChange={e => setLinkFirst(e.target.value)} />
+                  </Form.Group>
 
-            <button type="submit">Comparar</button>
-          </form>
+                  <Form.Group controlId="formNoteFirst">
+                    <Form.Label>Nota</Form.Label>
+                    <Form.Control type="text" placeholder="Nota" />
+                  </Form.Group>
+
+                  <Form.Group controlId="formSpeedFirst">
+                    <Form.Label>Indice de Velocidade</Form.Label>
+                    <Form.Control type="text" placeholder="Velocidade" />
+                  </Form.Group>   
+                </Col>
+                <Col xs="6" id="form-rate-sites">
+                  <Form.Group controlId="formLinkFirst">
+                    <Form.Label>Link 2</Form.Label>
+                    <Form.Control 
+                      type="text" 
+                      placeholder="Entre com o segundo link"
+                      value={linkFirst}
+                      onChange={e => setLinkSecond(e.target.value)} />
+                  </Form.Group>
+
+                  <Form.Group controlId="formNoteFirst">
+                    <Form.Label>Nota</Form.Label>
+                    <Form.Control type="text" placeholder="Nota" />
+                  </Form.Group>
+
+                  <Form.Group controlId="formSpeedFirst">
+                    <Form.Label>Indice de Velocidade</Form.Label>
+                    <Form.Control type="text" placeholder="Velocidade" />
+                  </Form.Group>   
+          </Col>
+           </Row>
+           <Button id="form-button" variant="primary" type="submit">
+              Verificar
+          </Button>
+           </Form>
+        </Container>
+       
     );
 }
 

@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, Text} from 'react';
 import api from './services/api'
+
 
 
 import './global.css'
@@ -7,50 +8,46 @@ import './App.css'
 import './Sidebar.css'
 import './Main.css'
 
+import {Container, Row, Col, Image} from 'react-bootstrap';
+
 import SiteForm from './components/SiteForm'
 import SiteItem from './components/SiteItem'
 
-
-// Componente: Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
-// Propriedade: Informações que um componente pai passa o componente filho
-// Estado: Informações mantidas pelo componente (imutabilidade)
-
 function App() {
-const [devs, setDevs] = useState([]);
+const [sites, setSites] = useState([]);
 
   useEffect(() => {
-    async function loadDevs(){
-      const response = await api.get('devs');
+    async function loadSites(){
+      const response = await api.get('sites');
 
-      setDevs(response.data);
+      setSites(response.data);
     }
 
-    loadDevs();
+    loadSites();
   }, []);
 
-  async function handleAddDev (data){
+  async function handleAddSites (data){
   
-    const response = await api.post('/devs',data)
+    const response = await api.post('/links',data)
 
-    setDevs([...devs, response.data]);
+    setSites([...sites, response.data]);
 
   }
 
   return(
-    <div id="app">
-      <aside>
-        <strong>Rockstage</strong>
-        <SiteForm onSubmit={handleAddDev}/>
-      </aside>
-      <main>
-        <ul>
-          {devs.map(dev => (
-            <SiteItem key={dev._id} dev={dev} />
-          ))}         
-        </ul>
-      </main>
-    </div>
-
+    <Container fluid>
+    
+      <Col className="p-3"></Col>
+      <Image src= "../logo-stage.png" width="150px" className="rounded mx-auto d-block"/> 
+      <Col className="p-3"></Col>
+      <Col xs="6" sm="4" className="rounded mx-auto d-block text-center">
+          <strong>COMPARADOR DE SITES</strong>
+      </Col>
+    
+      <Row>
+          <SiteForm onSubmit={handleAddSites}/>
+      </Row>
+    </Container>
   );
 }
 

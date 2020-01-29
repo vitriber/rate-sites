@@ -11,20 +11,27 @@ module.exports = {
     },
 
     async store(request, response) {
-        const{ blogUrl} = request.body;
-        console.log(blogUrl);
+        const{ linkFirst} = request.body;
+        const {linkSecond} = request.body;
 
-        let site = await Site.findOne({blogUrl});
 
-        const sitemap = await GetSites.getAllUrls(blogUrl);
+        const sitemapFirst = await GetSites.getAllUrls(linkFirst);
+        const sitemapSecond = await GetSites.getAllUrls(linkSecond);
 
-        sitemap.map(site => (
+
+        sitemapFirst.map(site => (
+            GetImages.getImages(site)
+        ));
+
+        sitemapSecond.map(site => (
             GetImages.getImages(site)
         ));
 
         site = await Site.create({
-            blogUrl,
-            pages: sitemap,
+            linkFirst,
+            linkSecond,
+            pagesFirst: sitemapFirst,
+            pagesSecond: sitemapSecond,
         })
 
     
