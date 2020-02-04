@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const uuidv5 = require('uuid/v5');
 
 module.exports = {
-  getImages(url) {
+  getImages(url, principalLink) {
     const gettingImages = new Promise((resolve, reject) => {
       (async () => {
 
@@ -15,11 +15,14 @@ module.exports = {
         await page.goto(`${url}`);
         await page.setViewport({width: 1080, height: 1080});
 
-        await page.screenshot({path: `./src/images/${pageName}.png`, fullPage: true});
+        const link = principalLink.substr(8);
+
+        await page.screenshot({path: `./src/images/${link}/${pageName}.png`, fullPage: true});
 
         await browser.close();
 
         console.log('> Process finished');
+        resolve(pageName);
       })();
 
     });
