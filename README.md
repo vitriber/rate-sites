@@ -1,10 +1,10 @@
 # chorus-diff-sites
 
-project that generates two the sitemap and capture all images for comparison
+Project that generates two the sitemap and capture all images for comparison
 
 ## Dependencies
 
-- yarn installed
+- yarn
 - nodejs
 
 using 'npm-install' for install node modules in backend and web
