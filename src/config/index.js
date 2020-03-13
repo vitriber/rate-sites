@@ -4,4 +4,8 @@ module.exports = {
 
   AWS_S3_IMAGES_BUCKET_REGION: process.env.AWS_S3_IMAGES_BUCKET_REGION,
   AWS_S3_IMAGES_BUCKET_NAME: process.env.AWS_S3_IMAGES_BUCKET_NAME,
+  MONGO_URL: process.env.MONGO_URL,
+
+  STORAGE_TYPE:process.env.STORAGE_TYPE,
+  APP_URL: process.env.APP_URL,
 }
