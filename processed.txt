@@ -1,0 +1,1134 @@
+Statistical profiling result from isolate-0x3207c40-12248-v8.log, (4984 ticks, 9 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   2107   42.3%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+    102    2.0%          /usr/lib/x86_64-linux-gnu/libc-2.30.so
+      2    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+      1    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     13    0.3%    0.5%  LazyCompile: *p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+     12    0.2%    0.4%  RegExp: ^\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$
+     12    0.2%    0.4%  LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      8    0.2%    0.3%  RegExp: [^a-z0-9\._-]
+      7    0.1%    0.3%  RegExp: \s(?:href|src)\s*=\s*("|').*?\1
+      5    0.1%    0.2%  RegExp: \s(?:href|src)\s*=\s*[^"'\s][^\s>]+
+      5    0.1%    0.2%  RegExp: \s(?:href|src)\s*=\s*("|').*?\1 {1}
+      5    0.1%    0.2%  LazyCompile: *p.is /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1263:18
+      4    0.1%    0.1%  RegExp: ^\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$ {1}
+      4    0.1%    0.1%  RegExp: <meta[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*content\s*=\s*["'] ?[^"'>]*url=([^"'>]*)["']?[^>]*> {2}
+      4    0.1%    0.1%  LazyCompile: *normalizeString path.js:52:25
+      4    0.1%    0.1%  LazyCompile: *URI.parseHost /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:547:27
+      3    0.1%    0.1%  RegExp: https?:\/\/[^?\s><'",]+
+      3    0.1%    0.1%  RegExp: ^[a-z][a-z0-9.+-]*$
+      3    0.1%    0.1%  RegExp: \s?url\([^"')]*?\)
+      3    0.1%    0.1%  RegExp: \s(?:href|src)\s*=\s*[^"'\s][^\s>]+ {2}
+      3    0.1%    0.1%  RegExp: <meta[^>]*content\s*=\s*["']?[^"'>]*url=([^"'>]*)["']?[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*> {1}
+      3    0.1%    0.1%  RegExp: .(gif|jpg|jpeg|png|ico|bmp|ogg|webp|mp4|webm|mp3|ttf|woff|json|rss|atom|gz|zip|rar|7z|css|js|gzip|exe|svg|xml)
+      3    0.1%    0.1%  RegExp: &amp;
+      3    0.1%    0.1%  RegExp: %(24|26|2B|2C|3B|3D|3A|40)
+      3    0.1%    0.1%  LazyCompile: *emit events.js:173:44
+      3    0.1%    0.1%  LazyCompile: *cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      3    0.1%    0.1%  LazyCompile: *Readable.read _stream_readable.js:401:35
+      3    0.1%    0.1%  LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2    0.0%    0.1%  RegExp: \s(?:href|src)\s*=\s*("|').*?\1 {2}
+      2    0.0%    0.1%  RegExp: [!'()*]
+      2    0.0%    0.1%  RegExp: <meta[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*content\s*=\s*["'] ?[^"'>]*url=([^"'>]*)["']?[^>]*> {1}
+      2    0.0%    0.1%  RegExp: <meta[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*content\s*=\s*["'] ?[^"'>]*url=([^"'>]*)["']?[^>]*>
+      2    0.0%    0.1%  RegExp: <meta[^>]*content\s*=\s*["']?[^"'>]*url=([^"'>]*)["']?[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*> {2}
+      2    0.0%    0.1%  RegExp: (xn--)
+      2    0.0%    0.1%  RegExp: &#x00026;
+      2    0.0%    0.1%  LazyCompile: *readableAddChunk _stream_readable.js:232:26
+      2    0.0%    0.1%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:66:35
+      2    0.0%    0.1%  LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      2    0.0%    0.1%  LazyCompile: *hidden internal/errors.js:243:25
+      2    0.0%    0.1%  LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1    0.0%    0.0%  RegExp: https?:\/\/[^?\s><'",]+ {2}
+      1    0.0%    0.0%  RegExp: https?:\/\/[^?\s><'",]+ {1}
+      1    0.0%    0.0%  RegExp: ^javascript:\s*(\w*\(['"](.*)['"]\))*.*
+      1    0.0%    0.0%  RegExp: ^(['"])(.*)\1$
+      1    0.0%    0.0%  RegExp: ^(?:\s*href|\s*src)\s*=+\s*
+      1    0.0%    0.0%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z]{1,})?$
+      1    0.0%    0.0%  RegExp: \{.*\}
+      1    0.0%    0.0%  RegExp: \ssrcset\s*=\s*("|')(.*?)\1
+      1    0.0%    0.0%  RegExp: \s?url\([^"')]*?\) {2}
+      1    0.0%    0.0%  RegExp: \s?url\([^"')]*?\) {1}
+      1    0.0%    0.0%  RegExp: \s?url\((["']).*?\1\) {2}
+      1    0.0%    0.0%  RegExp: \s?url\((["']).*?\1\) {1}
+      1    0.0%    0.0%  RegExp: \s?url\((["']).*?\1\)
+      1    0.0%    0.0%  RegExp: \s(?:href|src)\s*=\s*[^"'\s][^\s>]+ {1}
+      1    0.0%    0.0%  RegExp: \/{2,}
+      1    0.0%    0.0%  RegExp: \/+
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: <meta[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*content\s*=\s*["'] ?[^"'>]*url=([^"'>]*)["']?[^>]*> {3}
+      1    0.0%    0.0%  RegExp: <meta[^>]*content\s*=\s*["']?[^"'>]*url=([^"'>]*)["']?[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*> {3}
+      1    0.0%    0.0%  RegExp: <meta[^>]*content\s*=\s*["']?[^"'>]*url=([^"'>]*)["']?[^>]*http-equiv\s*=\s*["']?refresh["']?[^>]*>
+      1    0.0%    0.0%  RegExp: .(gif|jpg|jpeg|png|ico|bmp|ogg|webp|mp4|webm|mp3|ttf|woff|json|rss|atom|gz|zip|rar|7z|css|js|gzip|exe|svg|xml) {1}
+      1    0.0%    0.0%  RegExp: (\/(\.\/)+)|(\/\.$)
+      1    0.0%    0.0%  RegExp: &#x2f;
+      1    0.0%    0.0%  RegExp: %[0-9a-fA-F]{2}
+      1    0.0%    0.0%  LazyCompile: *slice buffer.js:1071:40
+      1    0.0%    0.0%  LazyCompile: *setopts /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/glob/common.js:53:18
+      1    0.0%    0.0%  LazyCompile: *realpathSync fs.js:1448:22
+      1    0.0%    0.0%  LazyCompile: *readUInt16BE internal/buffer.js:313:22
+      1    0.0%    0.0%  LazyCompile: *parse /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:271:16
+      1    0.0%    0.0%  LazyCompile: *p.href /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1212:20
+      1    0.0%    0.0%  LazyCompile: *p.build /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1129:21
+      1    0.0%    0.0%  LazyCompile: *onStreamRead internal/stream_base_commons.js:158:22
+      1    0.0%    0.0%  LazyCompile: *handleErrorFromBinding internal/fs/utils.js:215:32
+      1    0.0%    0.0%  LazyCompile: *getStatsFromBinding internal/fs/utils.js:397:29
+      1    0.0%    0.0%  LazyCompile: *getInfo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:156:10
+      1    0.0%    0.0%  LazyCompile: *dirname path.js:1127:10
+      1    0.0%    0.0%  LazyCompile: *consume /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:84:10
+      1    0.0%    0.0%  LazyCompile: *awaitable /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:206:28
+      1    0.0%    0.0%  LazyCompile: *actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      1    0.0%    0.0%  LazyCompile: *Writable.write _stream_writable.js:282:36
+      1    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:586:37
+      1    0.0%    0.0%  LazyCompile: *FastBuffer internal/buffer.js:940:1
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+
+ [C++]:
+   ticks  total  nonlib   name
+    986   19.8%   35.6%  epoll_pwait
+    165    3.3%    6.0%  node::(anonymous namespace)::ProcessWrap::Spawn(v8::FunctionCallbackInfo<v8::Value> const&)
+    156    3.1%    5.6%  node::fs::RMDir(v8::FunctionCallbackInfo<v8::Value> const&)
+    130    2.6%    4.7%  node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    107    2.1%    3.9%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     72    1.4%    2.6%  node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     68    1.4%    2.5%  __write
+     66    1.3%    2.4%  node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     65    1.3%    2.3%  void node::StreamBase::JSMethod<&node::StreamBase::Writev>(v8::FunctionCallbackInfo<v8::Value> const&)
+     61    1.2%    2.2%  void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     45    0.9%    1.6%  __libc_read
+     43    0.9%    1.6%  node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     35    0.7%    1.3%  node::url::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+     30    0.6%    1.1%  node::fs::Unlink(v8::FunctionCallbackInfo<v8::Value> const&)
+     27    0.5%    1.0%  void node::StreamBase::JSMethod<&node::StreamBase::WriteBuffer>(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    0.5%    0.9%  syscall
+     21    0.4%    0.8%  __GI___pthread_mutex_unlock
+     19    0.4%    0.7%  node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     17    0.3%    0.6%  __libc_malloc
+     16    0.3%    0.6%  node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.3%    0.5%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.3%    0.5%  fwrite
+     14    0.3%    0.5%  node::crypto::RandomBytes(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.3%    0.5%  node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.2%    0.4%  node::TLSWrap::Start(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.2%    0.4%  node::Kill(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.3%  __pthread_cond_signal
+      8    0.2%    0.3%  node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  void node::(anonymous namespace)::CompressionStream<node::(anonymous namespace)::ZlibContext>::Write<true>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  v8::internal::String::Flatten(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::AllocationType)
+      7    0.1%    0.3%  node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.3%  cfree
+      6    0.1%    0.2%  v8::internal::FixedArray::set(int, v8::internal::Object)
+      6    0.1%    0.2%  v8::internal::Compiler::Compile(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Compiler::ClearExceptionFlag, v8::internal::IsCompiledScope*)
+      6    0.1%    0.2%  node::crypto::SecureContext::SetCiphers(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.2%  node::crypto::SSLWrap<node::TLSWrap>::SetSession(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      5    0.1%    0.2%  node::crypto::SecureContext::Init(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  node::crypto::SSLWrap<node::TLSWrap>::GetPeerCertificate(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks)
+      5    0.1%    0.2%  __mprotect
+      4    0.1%    0.1%  v8::internal::Builtins::name(int)
+      4    0.1%    0.1%  v8::Context::GetNumberOfEmbedderDataFields()
+      4    0.1%    0.1%  node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  node::(anonymous namespace)::GetErrMap(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  do_futex_wait.constprop.0
+      4    0.1%    0.1%  _init
+      4    0.1%    0.1%  __GI___pthread_getspecific
+      3    0.1%    0.1%  v8::internal::DeclarationScope::DeclarationScope(v8::internal::Zone*, v8::internal::AstValueFactory*)
+      3    0.1%    0.1%  v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+      3    0.1%    0.1%  operator new(unsigned long)
+      3    0.1%    0.1%  operator delete(void*)
+      3    0.1%    0.1%  node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  node::cares_wrap::(anonymous namespace)::GetAddrInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  node::TLSWrap::DestroySSL(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  node::LibuvStreamWrap::ReadStart()::{lambda(uv_handle_s*, unsigned long, uv_buf_t*)#1}::_FUN(uv_handle_s*, unsigned long, uv_buf_t*)
+      3    0.1%    0.1%  node::AsyncWrap::EmitTraceEventBefore()
+      3    0.1%    0.1%  node::(anonymous namespace)::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  v8::internal::libc_memchr(void*, int, unsigned long)
+      2    0.0%    0.1%  v8::internal::StringSearch<unsigned char, unsigned char>::LinearSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      2    0.0%    0.1%  v8::internal::StringSearch<unsigned char, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      2    0.0%    0.1%  v8::internal::Scope::MustAllocate(v8::internal::Variable*)
+      2    0.0%    0.1%  v8::internal::MarkingBarrier(v8::internal::HeapObject, v8::internal::FullObjectSlot, v8::internal::Object)
+      2    0.0%    0.1%  v8::internal::Builtins::InvokeApiFunction(v8::internal::Isolate*, bool, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Handle<v8::internal::HeapObject>)
+      2    0.0%    0.1%  v8::internal::Builtin_GlobalEncodeURIComponent(int, unsigned long*, v8::internal::Isolate*)
+      2    0.0%    0.1%  v8::internal::Builtin_GlobalDecodeURIComponent(int, unsigned long*, v8::internal::Isolate*)
+      2    0.0%    0.1%  v8::internal::Builtin_ArrayPop(int, unsigned long*, v8::internal::Isolate*)
+      2    0.0%    0.1%  v8::internal::AstValueFactory::NewConsString()
+      2    0.0%    0.1%  v8::internal::AstValueFactory::GetString(unsigned int, bool, v8::internal::Vector<unsigned char const>)
+      2    0.0%    0.1%  v8::internal::Accessors::FunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  v8::Value::IsFunction() const
+      2    0.0%    0.1%  v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+      2    0.0%    0.1%  v8::EscapableHandleScope::Escape(unsigned long*)
+      2    0.0%    0.1%  v8::Context::Exit()
+      2    0.0%    0.1%  v8::(anonymous namespace)::CallDepthScope<true>::~CallDepthScope()
+      2    0.0%    0.1%  std::ostream::sentry::~sentry()
+      2    0.0%    0.1%  std::ostream::sentry::sentry(std::ostream&)
+      2    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      2    0.0%    0.1%  operator new[](unsigned long)
+      2    0.0%    0.1%  node::i18n::ToASCII(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::fs::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::crypto::SSLWrap<node::TLSWrap>::GetEphemeralKeyInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::TLSWrap::Wrap(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::SimpleWriteWrap<node::AsyncWrap>::GetAsyncWrap()
+      2    0.0%    0.1%  node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+      2    0.0%    0.1%  node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      2    0.0%    0.1%  node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, node::InternalCallbackScope::ResourceExpectation)
+      2    0.0%    0.1%  node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      2    0.0%    0.1%  node::Cwd(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.1%  bool v8::internal::MarkBit::Set<(v8::internal::AccessMode)0>() [clone .isra.74]
+      2    0.0%    0.1%  __pthread_cond_timedwait
+      2    0.0%    0.1%  __mmap
+      2    0.0%    0.1%  __libc_write
+      1    0.0%    0.0%  void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)
+      1    0.0%    0.0%  void std::vector<unsigned char, std::allocator<unsigned char> >::_M_emplace_back_aux<unsigned char const&>(unsigned char const&)
+      1    0.0%    0.0%  void node::cares_wrap::(anonymous namespace)::Query<node::cares_wrap::(anonymous namespace)::QuerySrvWrap>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  void node::StreamBase::JSMethod<&node::StreamBase::Shutdown>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)5>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  void node::BaseObject::InternalFieldSet<2, &(v8::Value::IsFunction() const)>(v8::Local<v8::String>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<void> const&)
+      1    0.0%    0.0%  v8::internal::libc_memset(void*, int, unsigned long)
+      1    0.0%    0.0%  v8::internal::Worklist<std::pair<v8::internal::HeapObject, int>, 256>::View::Push(std::pair<v8::internal::HeapObject, int>) [clone .isra.353]
+      1    0.0%    0.0%  v8::internal::VariableProxy::BindTo(v8::internal::Variable*)
+      1    0.0%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)1>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    0.0%    0.0%  v8::internal::StringSearch<unsigned short, unsigned char>::LinearSearch(v8::internal::StringSearch<unsigned short, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      1    0.0%    0.0%  v8::internal::StringSearch<unsigned short, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned short, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      1    0.0%    0.0%  v8::internal::SharedFunctionInfo::script() const
+      1    0.0%    0.0%  v8::internal::SharedFunctionInfo::is_compiled_scope() const
+      1    0.0%    0.0%  v8::internal::Scope::Scope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType)
+      1    0.0%    0.0%  v8::internal::Scope::AllocateVariablesRecursively()
+      1    0.0%    0.0%  v8::internal::Scope::AddUnresolved(v8::internal::VariableProxy*)
+      1    0.0%    0.0%  v8::internal::ReadOnlyHeap::GetReadOnlyRoots(v8::internal::HeapObject)
+      1    0.0%    0.0%  v8::internal::LookupIterator::PropertyOrElement(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::LookupIterator::Configuration)
+      1    0.0%    0.0%  v8::internal::HandleScope::~HandleScope()
+      1    0.0%    0.0%  v8::internal::FunctionCallbackArguments::FunctionCallbackArguments(v8::internal::Isolate*, v8::internal::Object, v8::internal::HeapObject, v8::internal::Object, v8::internal::HeapObject, unsigned long*, int)
+      1    0.0%    0.0%  v8::internal::Builtin_TypedArrayPrototypeBuffer(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_ErrorCaptureStackTrace(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_DateNow(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_DateConstructor(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::Internalize(v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  v8::internal::AstRawString::Compare(void*, void*)
+      1    0.0%    0.0%  v8::internal::Accessors::ReconfigureToDataProperty(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<v8::Boolean> const&)
+      1    0.0%    0.0%  v8::internal::Accessors::ArrayLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  v8::internal::(anonymous namespace)::ProbeInstantiationsCache(v8::internal::Isolate*, int, v8::internal::(anonymous namespace)::CachingMode)
+      1    0.0%    0.0%  v8::base::TemplateHashMapImpl<void*, void*, v8::base::KeyEqualityMatcher<void*>, v8::internal::ZoneAllocationPolicy>::FillEmptyEntry(v8::base::TemplateHashMapEntry<void*, void*>*, void* const&, void* const&, unsigned int, v8::internal::ZoneAllocationPolicy)
+      1    0.0%    0.0%  v8::Value::IsArrayBufferView() const
+      1    0.0%    0.0%  v8::TryCatch::HasCaught() const
+      1    0.0%    0.0%  v8::String::NewFromUtf8(v8::Isolate*, char const*, v8::NewStringType, int)
+      1    0.0%    0.0%  v8::MicrotasksScope::PerformCheckpoint(v8::Isolate*)
+      1    0.0%    0.0%  v8::Isolate::GetCurrentContext()
+      1    0.0%    0.0%  v8::Context::Enter()
+      1    0.0%    0.0%  v8::ArrayBuffer::GetContents()
+      1    0.0%    0.0%  unsigned int v8::internal::StringHasher::HashSequentialString<unsigned char>(unsigned char const*, int, unsigned long)
+      1    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.0%    0.0%  std::locale::id::_M_id() const
+      1    0.0%    0.0%  std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int)
+      1    0.0%    0.0%  std::__detail::_Map_base<v8::Isolate*, std::pair<v8::Isolate* const, std::shared_ptr<node::PerIsolatePlatformData> >, std::allocator<std::pair<v8::Isolate* const, std::shared_ptr<node::PerIsolatePlatformData> > >, std::__detail::_Select1st, std::equal_to<v8::Isolate*>, std::hash<v8::Isolate*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](v8::Isolate* const&)
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.0%    0.0%  sigemptyset
+      1    0.0%    0.0%  shutdown
+      1    0.0%    0.0%  operator delete[](void*)
+      1    0.0%    0.0%  non-virtual thunk to node::TLSWrap::OnStreamAlloc(unsigned long)
+      1    0.0%    0.0%  node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::fs::FSReqAfterScope::Reject(uv_fs_s*)
+      1    0.0%    0.0%  node::fs::Access(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::errors::TryCatchScope::~TryCatchScope()
+      1    0.0%    0.0%  node::crypto::SecureContext::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::TLSWrap::OnStreamAlloc(unsigned long)
+      1    0.0%    0.0%  node::TCPWrap::~TCPWrap()
+      1    0.0%    0.0%  node::TCPWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::NonOwningExternalOneByteResource::data() const
+      1    0.0%    0.0%  node::NodePlatform::GetForegroundTaskRunner(v8::Isolate*)
+      1    0.0%    0.0%  node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::{lambda(v8::FunctionCallbackInfo<v8::Value> const&)#1}::_FUN(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.0%    0.0%  node::InternalCallbackScope::Close()
+      1    0.0%    0.0%  node::Environment::RunTimers(uv_timer_s*)
+      1    0.0%    0.0%  node::Environment::RunAndClearNativeImmediates()
+      1    0.0%    0.0%  node::Environment::Reallocate(char*, unsigned long, unsigned long)
+      1    0.0%    0.0%  node::Environment::CheckImmediate(uv_check_s*)
+      1    0.0%    0.0%  node::EnvEnumerator(v8::PropertyCallbackInfo<v8::Array> const&)
+      1    0.0%    0.0%  node::EmitToJSStreamListener::OnStreamAlloc(unsigned long)
+      1    0.0%    0.0%  node::(anonymous namespace)::ProcessWrap::OnExit(uv_process_s*, long, int)
+      1    0.0%    0.0%  node::(anonymous namespace)::ProcessWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::(anonymous namespace)::Parser::Free(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  long v8::internal::SearchStringRaw<unsigned char const, unsigned char const>(v8::internal::Isolate*, unsigned char const*, int, unsigned char const*, int, int)
+      1    0.0%    0.0%  fflush
+      1    0.0%    0.0%  epoll_ctl
+      1    0.0%    0.0%  __pthread_cond_broadcast
+      1    0.0%    0.0%  __open64_nocancel
+      1    0.0%    0.0%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+
+ [Summary]:
+   ticks  total  nonlib   name
+    186    3.7%    6.7%  JavaScript
+   2577   51.7%   93.0%  C++
+     97    1.9%    3.5%  GC
+   2212   44.4%          Shared libraries
+      9    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   1188   64.6%   23.8%  v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    145    7.9%    2.9%  v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+    122    6.6%    2.4%  node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+     58    3.2%    1.2%  __write
+     32    1.7%    0.6%  v8::internal::Builtin_GlobalDecodeURIComponent(int, unsigned long*, v8::internal::Isolate*)
+     32    1.7%    0.6%  v8::internal::Builtin_ErrorConstructor(int, unsigned long*, v8::internal::Isolate*)
+     28    1.5%    0.6%  node::(anonymous namespace)::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    1.4%    0.5%  syscall
+     16    0.9%    0.3%  __GI___pthread_mutex_unlock
+     15    0.8%    0.3%  v8::internal::Builtin_ErrorCaptureStackTrace(int, unsigned long*, v8::internal::Isolate*)
+     11    0.6%    0.2%  node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.5%    0.2%  v8::internal::Builtin_GlobalEncodeURIComponent(int, unsigned long*, v8::internal::Isolate*)
+      9    0.5%    0.2%  node::url::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.4%    0.2%  v8::internal::Builtin_StringPrototypeLastIndexOf(int, unsigned long*, v8::internal::Isolate*)
+      8    0.4%    0.2%  node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      8    0.4%    0.2%  fwrite
+      7    0.4%    0.1%  v8::internal::String::Flatten(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::AllocationType)
+      7    0.4%    0.1%  v8::internal::Builtin_JsonStringify(int, unsigned long*, v8::internal::Isolate*)
+      6    0.3%    0.1%  v8::internal::Compiler::Compile(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Compiler::ClearExceptionFlag, v8::internal::IsCompiledScope*)
+      5    0.3%    0.1%  __libc_malloc
+      4    0.2%    0.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      3    0.2%    0.1%  v8::internal::Builtin_ObjectDefineProperty(int, unsigned long*, v8::internal::Isolate*)
+      3    0.2%    0.1%  v8::internal::Builtin_DateConstructor(int, unsigned long*, v8::internal::Isolate*)
+      3    0.2%    0.1%  v8::internal::Builtin_ArrayPop(int, unsigned long*, v8::internal::Isolate*)
+      3    0.2%    0.1%  __pthread_cond_signal
+      2    0.1%    0.0%  v8::internal::libc_memchr(void*, int, unsigned long)
+      2    0.1%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::LinearSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      2    0.1%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      2    0.1%    0.0%  v8::internal::Scope::MustAllocate(v8::internal::Variable*)
+      2    0.1%    0.0%  v8::internal::MarkingBarrier(v8::internal::HeapObject, v8::internal::FullObjectSlot, v8::internal::Object)
+      2    0.1%    0.0%  v8::internal::DeclarationScope::DeclarationScope(v8::internal::Zone*, v8::internal::AstValueFactory*)
+      2    0.1%    0.0%  v8::internal::Builtins::InvokeApiFunction(v8::internal::Isolate*, bool, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Handle<v8::internal::HeapObject>)
+      2    0.1%    0.0%  v8::internal::Builtin_ArrayUnshift(int, unsigned long*, v8::internal::Isolate*)
+      2    0.1%    0.0%  v8::internal::Builtin_ArrayShift(int, unsigned long*, v8::internal::Isolate*)
+      2    0.1%    0.0%  v8::internal::Builtin_ArrayBufferConstructor(int, unsigned long*, v8::internal::Isolate*)
+      2    0.1%    0.0%  v8::internal::AstValueFactory::NewConsString()
+      2    0.1%    0.0%  v8::internal::AstValueFactory::GetString(unsigned int, bool, v8::internal::Vector<unsigned char const>)
+      2    0.1%    0.0%  v8::internal::Accessors::FunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  operator new[](unsigned long)
+      2    0.1%    0.0%  node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      2    0.1%    0.0%  node::(anonymous namespace)::GetErrMap(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  __mprotect
+      1    0.1%    0.0%  void node::BaseObject::InternalFieldSet<2, &(v8::Value::IsFunction() const)>(v8::Local<v8::String>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<void> const&)
+      1    0.1%    0.0%  v8::internal::libc_memset(void*, int, unsigned long)
+      1    0.1%    0.0%  v8::internal::VariableProxy::BindTo(v8::internal::Variable*)
+      1    0.1%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)1>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    0.1%    0.0%  v8::internal::StringSearch<unsigned short, unsigned char>::LinearSearch(v8::internal::StringSearch<unsigned short, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      1    0.1%    0.0%  v8::internal::StringSearch<unsigned short, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned short, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      1    0.1%    0.0%  v8::internal::SharedFunctionInfo::script() const
+      1    0.1%    0.0%  v8::internal::SharedFunctionInfo::is_compiled_scope() const
+      1    0.1%    0.0%  v8::internal::Scope::Scope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType)
+      1    0.1%    0.0%  v8::internal::Scope::AllocateVariablesRecursively()
+      1    0.1%    0.0%  v8::internal::Scope::AddUnresolved(v8::internal::VariableProxy*)
+      1    0.1%    0.0%  v8::internal::ReadOnlyHeap::GetReadOnlyRoots(v8::internal::HeapObject)
+      1    0.1%    0.0%  v8::internal::LookupIterator::PropertyOrElement(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::LookupIterator::Configuration)
+      1    0.1%    0.0%  v8::internal::HandleScope::~HandleScope()
+      1    0.1%    0.0%  v8::internal::FixedArray::set(int, v8::internal::Object)
+      1    0.1%    0.0%  v8::internal::Builtins::name(int)
+      1    0.1%    0.0%  v8::internal::Builtin_TypedArrayPrototypeBuffer(int, unsigned long*, v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::Builtin_FunctionConstructor(int, unsigned long*, v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::Builtin_DateNow(int, unsigned long*, v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::Builtin_CallSitePrototypeGetColumnNumber(int, unsigned long*, v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::Builtin_ArrayConcat(int, unsigned long*, v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::AstValueFactory::Internalize(v8::internal::Isolate*)
+      1    0.1%    0.0%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.1%    0.0%  v8::internal::AstRawString::Compare(void*, void*)
+      1    0.1%    0.0%  v8::internal::Accessors::ArrayLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.1%    0.0%  v8::base::TemplateHashMapImpl<void*, void*, v8::base::KeyEqualityMatcher<void*>, v8::internal::ZoneAllocationPolicy>::FillEmptyEntry(v8::base::TemplateHashMapEntry<void*, void*>*, void* const&, void* const&, unsigned int, v8::internal::ZoneAllocationPolicy)
+      1    0.1%    0.0%  v8::Value::IsArrayBufferView() const
+      1    0.1%    0.0%  v8::String::NewFromUtf8(v8::Isolate*, char const*, v8::NewStringType, int)
+      1    0.1%    0.0%  v8::MicrotasksScope::PerformCheckpoint(v8::Isolate*)
+      1    0.1%    0.0%  v8::ArrayBuffer::GetContents()
+      1    0.1%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.1%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.1%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.1%    0.0%  std::locale::id::_M_id() const
+      1    0.1%    0.0%  std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int)
+      1    0.1%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.1%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.1%    0.0%  operator delete[](void*)
+      1    0.1%    0.0%  operator delete(void*)
+      1    0.1%    0.0%  node::tracing::TraceEventHelper::GetTracingController()
+      1    0.1%    0.0%  node::NonOwningExternalOneByteResource::data() const
+      1    0.1%    0.0%  node::EnvEnumerator(v8::PropertyCallbackInfo<v8::Array> const&)
+      1    0.1%    0.0%  long v8::internal::SearchStringRaw<unsigned char const, unsigned char const>(v8::internal::Isolate*, unsigned char const*, int, unsigned char const*, int, int)
+      1    0.1%    0.0%  fflush
+      1    0.1%    0.0%  cfree
+      1    0.1%    0.0%  _init
+      1    0.1%    0.0%  __mmap
+      1    0.1%    0.0%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2107   42.3%  /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+    688   32.7%    /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+    157   22.8%      /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+     27   17.2%        LazyCompile: *p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+     18   66.7%          LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      8   44.4%            LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      8   44.4%            LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2   11.1%            LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      9   33.3%          LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      6   66.7%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2   22.2%            LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      1   11.1%            LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+     14    8.9%        LazyCompile: *URI.parseHost /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:547:27
+     14  100.0%          LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      8   57.1%            LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      3   21.4%            LazyCompile: ~p.absoluteTo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2148:26
+      3   21.4%            LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+     13    8.3%        LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+     13  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+     13  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+     12    7.6%        LazyCompile: *cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      8   66.7%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      8  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      4   33.3%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      4  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      5    3.2%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:181:26
+      5  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      5  100.0%            LazyCompile: ~make /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:142:15
+      5    3.2%        LazyCompile: *parse /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:271:16
+      5  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      5  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:181:26
+      4    2.5%        LazyCompile: ~cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      4  100.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      4  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      4    2.5%        LazyCompile: ~URI.parseHost /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:547:27
+      3   75.0%          LazyCompile: ~URI.parseAuthority /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:609:32
+      3  100.0%            LazyCompile: ~URI.parse /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:490:23
+      1   25.0%          LazyCompile: *p.href /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1212:20
+      1  100.0%            LazyCompile: ~URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      3    1.9%        LazyCompile: ~p.is /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1263:18
+      3  100.0%          LazyCompile: ~p.normalizeHostname /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1949:33
+      3  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      3    1.9%        LazyCompile: ~URI.parseQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:633:28
+      2   66.7%          LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1   50.0%            LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1   50.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1   33.3%          LazyCompile: ~p.normalizeQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2047:30
+      1  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      3    1.9%        LazyCompile: ~Crawler.discoverRegex /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:355:17
+      3  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:928:49
+      3  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      3    1.9%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      3  100.0%          LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      3  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      3    1.9%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:928:49
+      3  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      3  100.0%            LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+      3    1.9%        LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      3  100.0%          LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      3  100.0%            LazyCompile: *emit events.js:173:44
+      2    1.3%        LazyCompile: ~socketOnData _http_client.js:449:22
+      1   50.0%          RegExp: [A-Za-z0-9\/+]
+      1  100.0%            LazyCompile: ~addChunk _stream_readable.js:306:18
+      1   50.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~addChunk _stream_readable.js:306:18
+      2    1.3%        LazyCompile: ~defaults /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:25:19
+      2  100.0%          LazyCompile: ~rimrafSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:270:21
+      2  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:349:43
+      2    1.3%        LazyCompile: ~databaseNamespace /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/wireprotocol/shared.js:95:27
+      2  100.0%          LazyCompile: ~_command /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/wireprotocol/command.js:40:18
+      2  100.0%            LazyCompile: ~command /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/wireprotocol/command.js:18:17
+      2    1.3%        LazyCompile: ~_onLoadingFinished /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:278:21
+      2  100.0%          LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      2  100.0%            LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      2    1.3%        LazyCompile: ~<anonymous> internal/util/inspect.js:97:45
+      2  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2  100.0%            Eval: ~<anonymous> internal/util/inspect.js:1:1
+      2    1.3%        LazyCompile: *strictEncodeURIComponent /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:300:36
+      1   50.0%          LazyCompile: ~URI.encodeQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:409:29
+      1  100.0%            LazyCompile: ~URI.buildQueryParameter /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:768:37
+      1   50.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:437:20
+      1  100.0%            LazyCompile: ~actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      2    1.3%        LazyCompile: *actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      2  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      2  100.0%            LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      2    1.3%        LazyCompile: *<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      2  100.0%          LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      2  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+     23    3.3%      LazyCompile: *p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+     20   87.0%        LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+     12   60.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+     12  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      5   25.0%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      5  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      2   10.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1    5.0%          LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      3   13.0%        LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      2   66.7%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1   33.3%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+     14    2.0%      LazyCompile: ~close /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:213:8
+     14  100.0%        LazyCompile: ~close /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:63:8
+     14  100.0%          LazyCompile: ~dispose /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:143:10
+     14  100.0%            LazyCompile: ~disconnect /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Browser.js:259:13
+     13    1.9%      LazyCompile: ~resolve path.js:973:10
+     12   92.3%        LazyCompile: ~resolveExports internal/modules/cjs/loader.js:374:24
+     12  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:463:28
+     12  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:738:35
+      1    7.7%        LazyCompile: ~patchProcessObject internal/bootstrap/pre_execution.js:66:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:9:36
+      1  100.0%            Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+     12    1.7%      LazyCompile: ~nextTick internal/process/task_queues.js:102:18
+      7   58.3%        LazyCompile: ~onwrite _stream_writable.js:463:17
+      4   57.1%          LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      4  100.0%            LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      3   42.9%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:144:30
+      3  100.0%            LazyCompile: ~writevGeneric internal/stream_base_commons.js:111:23
+      3   25.0%        LazyCompile: ~maybeReadMore _stream_readable.js:600:23
+      3  100.0%          LazyCompile: ~addChunk _stream_readable.js:306:18
+      3  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:232:26
+      1    8.3%        LazyCompile: ~resume _stream_readable.js:967:16
+      1  100.0%          LazyCompile: ~Readable.resume _stream_readable.js:953:37
+      1  100.0%            LazyCompile: ~Socket.resume net.js:600:35
+      1    8.3%        LazyCompile: ~TLSSocket _tls_wrap.js:360:19
+      1  100.0%          LazyCompile: ~connect _tls_wrap.js:1375:35
+      1  100.0%            LazyCompile: ~createConnection https.js:95:26
+     12    1.7%      LazyCompile: ~emit events.js:173:44
+      4   33.3%        LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:190:13
+      4  100.0%          LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      4  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      3   25.0%        LazyCompile: ~onFinish _http_outgoing.js:685:18
+      3  100.0%          LazyCompile: ~onCorkedFinish _stream_writable.js:709:24
+      3  100.0%            LazyCompile: ~afterWrite _stream_writable.js:512:20
+      1    8.3%        LazyCompile: ~processMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connection.js:380:24
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connection.js:441:18
+      1  100.0%            LazyCompile: ~emit events.js:173:44
+      1    8.3%        LazyCompile: ~onconnection net.js:1522:22
+      1    8.3%        LazyCompile: ~endReadableNT _stream_readable.js:1178:23
+      1  100.0%          LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    8.3%        LazyCompile: ~addChunk _stream_readable.js:306:18
+      1  100.0%          LazyCompile: ~readableAddChunk _stream_readable.js:232:26
+      1  100.0%            LazyCompile: ~Readable.push _stream_readable.js:223:35
+      1    8.3%        LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      1  100.0%            LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     12    1.7%      LazyCompile: ~_onResponseReceived /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:265:22
+     12  100.0%        LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+     12  100.0%          LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     12  100.0%            LazyCompile: *emit events.js:173:44
+     10    1.5%      RegExp: \.\d+\.|\.\d+$
+      7   70.0%        LazyCompile: ~onwrite _stream_writable.js:463:17
+      7  100.0%          LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      7  100.0%            LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      2   20.0%        LazyCompile: ~maybeReadMore _stream_readable.js:600:23
+      2  100.0%          LazyCompile: ~addChunk _stream_readable.js:306:18
+      2  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:232:26
+      1   10.0%        LazyCompile: *readableAddChunk _stream_readable.js:232:26
+      1  100.0%          LazyCompile: *onStreamRead internal/stream_base_commons.js:158:22
+     10    1.5%      LazyCompile: *processTicksAndRejections internal/process/task_queues.js:66:35
+     10    1.5%      LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      6   60.0%        LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      3   50.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      3  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      2   33.3%          LazyCompile: ~Crawler.protocolSupported /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:714:47
+      2  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1   16.7%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      3   30.0%        LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      3  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      3  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      1   10.0%        LazyCompile: ~p.absoluteTo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2148:26
+      1  100.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      9    1.3%      LazyCompile: *cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      6   66.7%        LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      6  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      6  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      3   33.3%        LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      3  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      3  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      8    1.2%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:928:49
+      8  100.0%        /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      8  100.0%          LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+      8  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      7    1.0%      LazyCompile: *p.is /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1263:18
+      5   71.4%        LazyCompile: ~p.normalizeHostname /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1949:33
+      5  100.0%          LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      4   80.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1   20.0%            LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      2   28.6%        LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1   50.0%          LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      1   50.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      7    1.0%      LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      6   85.7%        LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      6  100.0%          LazyCompile: *emit events.js:173:44
+      6  100.0%            LazyCompile: ~receiverOnMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:788:27
+      1   14.3%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      1  100.0%          LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      1  100.0%            LazyCompile: *emit events.js:173:44
+    126    6.0%    v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+     87   69.0%      LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+     62   71.3%        LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     62  100.0%          LazyCompile: *emit events.js:173:44
+     62  100.0%            LazyCompile: ~receiverOnMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:788:27
+     24   27.6%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+     24  100.0%          LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     24  100.0%            LazyCompile: *emit events.js:173:44
+      1    1.1%        LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      1  100.0%          LazyCompile: *emit events.js:173:44
+      1  100.0%            LazyCompile: ~receiverOnMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:788:27
+     36   28.6%      LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+     36  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+     36  100.0%          LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     19   52.8%            LazyCompile: *emit events.js:173:44
+     17   47.2%            LazyCompile: ~emit events.js:173:44
+      2    1.6%      LazyCompile: ~readPackage internal/modules/cjs/loader.js:221:21
+      2  100.0%        LazyCompile: ~readPackageMain internal/modules/cjs/loader.js:272:25
+      2  100.0%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:282:20
+      2  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:463:28
+     46    2.2%    LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+     17   37.0%      LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      7   41.2%        LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      7  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      7  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      5   29.4%        LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      5  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      5  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      3   17.6%        LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      3  100.0%          LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      3  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1039:31
+      2   11.8%        LazyCompile: ~Crawler.protocolSupported /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:714:47
+      2  100.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+     10   21.7%      LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+     10  100.0%        LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+     10  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+     10  100.0%            LazyCompile: ~FetchQueue.update /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:212:40
+      4    8.7%      LazyCompile: ~p.clone /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1140:21
+      4  100.0%        LazyCompile: ~p.absoluteTo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2148:26
+      3   75.0%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      3  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      1   25.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      4    8.7%      LazyCompile: ~Crawler.protocolSupported /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:714:47
+      4  100.0%        LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      4  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      4  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      4    8.7%      LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      4  100.0%        LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      4  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1039:31
+      4  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      4    8.7%      LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      4  100.0%        LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      4  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      4  100.0%            LazyCompile: ~FetchQueue.update /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:212:40
+      2    4.3%      LazyCompile: ~Crawler.urlIsAllowed /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:478:42
+      2  100.0%        LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      2  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1039:31
+      2  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1    2.2%      LazyCompile: ~p.absoluteTo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2148:26
+      1  100.0%        LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+
+    986   19.8%  epoll_pwait
+
+    165    3.3%  node::(anonymous namespace)::ProcessWrap::Spawn(v8::FunctionCallbackInfo<v8::Value> const&)
+    165  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    165  100.0%      LazyCompile: ~ChildProcess.spawn internal/child_process.js:330:40
+    165  100.0%        LazyCompile: ~spawn child_process.js:533:15
+    165  100.0%          LazyCompile: ~launch /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:81:15
+    165  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+
+    156    3.1%  node::fs::RMDir(v8::FunctionCallbackInfo<v8::Value> const&)
+    156  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    156  100.0%      LazyCompile: ~rmdirSync fs.js:741:19
+    150   96.2%        LazyCompile: ~rmdirSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:328:20
+    150  100.0%          LazyCompile: ~rimrafSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:270:21
+    137   91.3%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:349:43
+     13    8.7%            LazyCompile: ~killChrome /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:209:24
+      6    3.8%        LazyCompile: ~rmkidsSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:346:21
+      6  100.0%          LazyCompile: ~rmdirSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:328:20
+      6  100.0%            LazyCompile: ~rimrafSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:270:21
+
+    130    2.6%  node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    130  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    130  100.0%      LazyCompile: ~readSync fs.js:482:18
+    130  100.0%        LazyCompile: ~tryReadSync fs.js:327:21
+    130  100.0%          LazyCompile: ~readFileSync fs.js:339:22
+    127   97.7%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      2    1.5%            LazyCompile: ~Module._extensions..json internal/modules/cjs/loader.js:996:39
+
+    107    2.1%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    107  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    107  100.0%      LazyCompile: ~Module._compile internal/modules/cjs/loader.js:864:37
+    107  100.0%        LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+    107  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:803:33
+    107  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:667:24
+
+    102    2.0%  /usr/lib/x86_64-linux-gnu/libc-2.30.so
+     60   58.8%    /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+     18   30.0%      /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      3   16.7%        LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+      3  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      3  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      2   11.1%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      2  100.0%          LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      2  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      2   11.1%        LazyCompile: *parse /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:271:16
+      2  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/minimatch/minimatch.js:181:26
+      2   11.1%        LazyCompile: *URI.parseHost /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:547:27
+      2  100.0%          LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1   50.0%            LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1   50.0%            LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1    5.6%        LazyCompile: ~splitRoot fs.js:1410:33
+      1  100.0%          LazyCompile: ~realpathSync fs.js:1448:22
+      1  100.0%            LazyCompile: ~toRealPath internal/modules/cjs/loader.js:336:20
+      1    5.6%        LazyCompile: ~cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      1  100.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1    5.6%        LazyCompile: ~URI.parseQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:633:28
+      1  100.0%          LazyCompile: ~p.normalizeQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2047:30
+      1  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1    5.6%        LazyCompile: ~URI.buildQuery /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:739:28
+      1  100.0%          LazyCompile: ~p.query /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1850:21
+      1  100.0%            LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1    5.6%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:652:40
+      1  100.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~endReadableNT _stream_readable.js:1178:23
+      1    5.6%        LazyCompile: *strictEncodeURIComponent /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:300:36
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:437:20
+      1  100.0%            LazyCompile: ~actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      1    5.6%        LazyCompile: *p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      1  100.0%          LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1    5.6%        LazyCompile: *cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      1  100.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1    5.6%        LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1  100.0%          LazyCompile: ~p.absoluteTo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:2148:26
+      1  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      7   11.7%      LazyCompile: ~_copy buffer.js:188:15
+      7  100.0%        LazyCompile: ~copy buffer.js:745:16
+      3   42.9%          LazyCompile: *_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      3  100.0%            LazyCompile: *Writable.write _stream_writable.js:282:36
+      2   28.6%          LazyCompile: *getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+      2  100.0%            LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      2   28.6%          LazyCompile: *consume /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:84:10
+      2  100.0%            LazyCompile: ~getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+      3    5.0%      LazyCompile: ~_onResponseReceived /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:265:22
+      3  100.0%        LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      3  100.0%          LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      3  100.0%            LazyCompile: *emit events.js:173:44
+      2    3.3%      LazyCompile: ~close /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:213:8
+      2  100.0%        LazyCompile: ~close /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:63:8
+      2  100.0%          LazyCompile: ~dispose /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:143:10
+      2  100.0%            LazyCompile: ~disconnect /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Browser.js:259:13
+      2    3.3%      LazyCompile: *realpathSync fs.js:1448:22
+      2  100.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:336:20
+      2  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:328:17
+      1   50.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:282:20
+      1   50.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:343:23
+      2    3.3%      LazyCompile: *p.is /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1263:18
+      1   50.0%        LazyCompile: ~p.normalizeHostname /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1949:33
+      1  100.0%          LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1   50.0%        LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      2    3.3%      LazyCompile: *URI.parseHost /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:547:27
+      2  100.0%        LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      2  100.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      2  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      2    3.3%      LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      2  100.0%        LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1   50.0%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      1   50.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1    1.7%      LazyCompile: ~processTimers internal/timers.js:460:25
+      1    1.7%      LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    1.7%      LazyCompile: ~onWarning internal/process/warning.js:55:19
+      1  100.0%        LazyCompile: ~emit events.js:173:44
+      1  100.0%          LazyCompile: ~<anonymous> internal/process/warning.js:52:10
+      1  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    1.7%      LazyCompile: ~listOnTimeout internal/timers.js:480:25
+      1  100.0%        LazyCompile: ~processTimers internal/timers.js:460:25
+      1    1.7%      LazyCompile: ~getPayloadLength16 /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:238:21
+      1  100.0%        LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      1  100.0%          LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1  100.0%            LazyCompile: ~doWrite _stream_writable.js:425:17
+      1    1.7%      LazyCompile: ~emit events.js:173:44
+      1  100.0%        LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:190:13
+      1  100.0%          LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      1    1.7%      LazyCompile: ~cleanup /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:374:21
+      1  100.0%        LazyCompile: ~onLine /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:365:20
+      1  100.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~Interface._onLine readline.js:308:39
+      1    1.7%      LazyCompile: ~cleanURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:831:19
+      1  100.0%        LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%          LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+      1    1.7%      LazyCompile: ~checkServer /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/monitoring.js:147:23
+      1  100.0%        LazyCompile: ~monitorServer /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/monitoring.js:129:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/monitoring.js:134:37
+      1  100.0%            LazyCompile: ~listOnTimeout internal/timers.js:480:25
+      1    1.7%      LazyCompile: ~addRequest _http_agent.js:154:49
+      1  100.0%        LazyCompile: ~ClientRequest _http_client.js:76:23
+      1  100.0%          LazyCompile: ~request https.js:276:17
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/agent-base/patch-core.js:14:20
+      1    1.7%      LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1  100.0%        LazyCompile: ~doWrite _stream_writable.js:425:17
+      1  100.0%          LazyCompile: ~writeOrBuffer _stream_writable.js:385:23
+      1  100.0%            LazyCompile: ~Writable.write _stream_writable.js:282:36
+      1    1.7%      LazyCompile: ~_onExecutionContextCreated /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:303:29
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:52:56
+      1  100.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:190:13
+      1    1.7%      LazyCompile: ~_mask /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/buffer-util.js:39:15
+      1  100.0%        LazyCompile: ~frame /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/sender.js:45:15
+      1  100.0%          LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/sender.js:236:7
+      1  100.0%            LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:322:7
+      1    1.7%      LazyCompile: ~_addListener events.js:234:22
+      1  100.0%        LazyCompile: ~addListener events.js:296:58
+      1  100.0%          LazyCompile: ~Readable.on _stream_readable.js:868:33
+      1  100.0%            LazyCompile: ~tickOnSocket _http_client.js:652:22
+      1    1.7%      LazyCompile: ~Response /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:531:14
+      1  100.0%        LazyCompile: ~_onResponseReceived /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:265:22
+      1  100.0%          LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1  100.0%            LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      1    1.7%      LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:738:35
+      1  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:667:24
+      1  100.0%          LazyCompile: ~Module.runMain internal/modules/cjs/loader.js:1029:26
+      1  100.0%            Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.7%      LazyCompile: ~Document /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/document.js:62:18
+      1  100.0%        LazyCompile: ~Model /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/model.js:96:15
+      1  100.0%          LazyCompile: ~model /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/model.js:4603:27
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/model.js:3056:22
+      1    1.7%      LazyCompile: ~<anonymous> internal/fs/utils.js:234:35
+      1  100.0%        LazyCompile: ~hidden internal/errors.js:243:25
+      1  100.0%          LazyCompile: ~<anonymous> internal/fs/utils.js:523:38
+      1  100.0%            LazyCompile: ~hidden internal/errors.js:243:25
+      1    1.7%      LazyCompile: *p.href /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1212:20
+      1  100.0%        LazyCompile: ~URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1  100.0%          LazyCompile: ~URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1    1.7%      LazyCompile: *URI.parseUserinfo /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:613:31
+      1  100.0%        LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1  100.0%          LazyCompile: *URI /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:35:15
+      1  100.0%            LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1    1.7%      Eval: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/object-assign/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:864:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:803:33
+      1    1.7%      Eval: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mime-types/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:864:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:803:33
+     15   14.7%    v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+     12   80.0%      LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+     12  100.0%        LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+     12  100.0%          LazyCompile: *emit events.js:173:44
+     12  100.0%            LazyCompile: ~receiverOnMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:788:27
+      3   20.0%      LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      3  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      3  100.0%          LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      2   66.7%            LazyCompile: *emit events.js:173:44
+      1   33.3%            LazyCompile: ~emit events.js:173:44
+      7    6.9%    v8::internal::Builtin_GlobalDecodeURIComponent(int, unsigned long*, v8::internal::Isolate*)
+      5   71.4%      LazyCompile: *p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      4   80.0%        LazyCompile: *p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      3   75.0%          LazyCompile: *Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      3  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1   25.0%          LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1  100.0%            LazyCompile: ~Crawler.queueURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1064:38
+      1   20.0%        LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%          LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1   14.3%      LazyCompile: ~actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      1  100.0%          LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      1  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1   14.3%      LazyCompile: *actualCodingFunc /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:467:36
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:458:20
+      1  100.0%          LazyCompile: ~p.normalizePath /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1972:29
+      1  100.0%            LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      3    2.9%    v8::internal::Builtin_ErrorConstructor(int, unsigned long*, v8::internal::Isolate*)
+      2   66.7%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:154:41
+      2  100.0%        LazyCompile: ~FetchQueue.exists /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:179:39
+      2  100.0%          LazyCompile: ~FetchQueue.add /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:143:36
+      2  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1107:16
+      1   33.3%      LazyCompile: ~uvException internal/errors.js:360:21
+      1  100.0%        LazyCompile: ~handleErrorFromBinding internal/fs/utils.js:215:32
+      1  100.0%          LazyCompile: ~rmdirSync fs.js:741:19
+      1  100.0%            LazyCompile: ~rmdirSync /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:328:20
+      2    2.0%    v8::internal::Builtin_ArrayBufferConstructor(int, unsigned long*, v8::internal::Isolate*)
+      2  100.0%      /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2  100.0%        LazyCompile: ~FastBuffer internal/buffer.js:940:1
+      2  100.0%          LazyCompile: ~alloc buffer.js:344:30
+      1   50.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:623:64
+      1   50.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1455:32
+      2    2.0%    LazyCompile: *dataMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:392:14
+      2  100.0%      LazyCompile: ~getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+      2  100.0%        LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      2  100.0%          LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1   50.0%            LazyCompile: ~doWrite _stream_writable.js:425:17
+      1   50.0%            LazyCompile: *Writable.write _stream_writable.js:282:36
+
+     72    1.4%  node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     72  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+     72  100.0%      LazyCompile: ~readPackage internal/modules/cjs/loader.js:221:21
+     72  100.0%        LazyCompile: ~readPackageMain internal/modules/cjs/loader.js:272:25
+     72  100.0%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:282:20
+     72  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:463:28
+
+     68    1.4%  __write
+     57   83.8%    /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      5    8.8%      LazyCompile: ~emit events.js:173:44
+      2   40.0%        LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:190:13
+      2  100.0%          LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      2  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      1   20.0%        LazyCompile: ~onnewsessionclient _tls_wrap.js:250:28
+      1   20.0%        LazyCompile: ~addChunk _stream_readable.js:306:18
+      1  100.0%          LazyCompile: ~readableAddChunk _stream_readable.js:232:26
+      1  100.0%            LazyCompile: ~Readable.push _stream_readable.js:223:35
+      1   20.0%        LazyCompile: ~<anonymous> net.js:662:24
+      5    8.8%      /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2   40.0%        LazyCompile: ~socketOnData _http_client.js:449:22
+      2  100.0%          RegExp: [A-Za-z0-9\/+]
+      2  100.0%            LazyCompile: ~addChunk _stream_readable.js:306:18
+      2   40.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:928:49
+      2  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2  100.0%            LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+      1   20.0%        LazyCompile: ~Kareem.filter /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/kareem/index.js:323:35
+      1  100.0%          LazyCompile: ~applyQueryMiddleware /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:41:30
+      1  100.0%            LazyCompile: ~compile /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/model.js:4585:33
+      2    3.5%      node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%        LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      2    3.5%      LazyCompile: ~initialize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:58:19
+      2  100.0%        /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      2  100.0%          node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      2    3.5%      LazyCompile: ~end _http_outgoing.js:689:45
+      2  100.0%        LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:107:25
+      2  100.0%          LazyCompile: ~json /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:239:25
+      2  100.0%            LazyCompile: ~store /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/controllers/SiteController.js:30:16
+      1    1.8%      LazyCompile: ~spawn child_process.js:533:15
+      1  100.0%        LazyCompile: ~launch /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:81:15
+      1  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1    1.8%      LazyCompile: ~setCharset /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/utils.js:250:41
+      1  100.0%        LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:107:25
+      1  100.0%          LazyCompile: ~json /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:239:25
+      1  100.0%            LazyCompile: ~store /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/controllers/SiteController.js:30:16
+      1    1.8%      LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:71:7
+      1  100.0%        LazyCompile: ~create /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Browser.js:32:22
+      1  100.0%          LazyCompile: ~launch /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Launcher.js:81:15
+      1  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1    1.8%      LazyCompile: ~selectServers /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/server_selection.js:259:23
+      1  100.0%        LazyCompile: ~selectServer /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/topology.js:404:15
+      1  100.0%          LazyCompile: ~connect /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/topology.js:260:10
+      1  100.0%            LazyCompile: ~createTopology /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/operations/connect.js:478:24
+      1    1.8%      LazyCompile: ~rimraf /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/rimraf/rimraf.js:52:17
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/helper.js:165:26
+      1  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%            LazyCompile: ~promisified /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/helper.js:164:25
+      1    1.8%      LazyCompile: ~readUInt16BE internal/buffer.js:313:22
+      1  100.0%        LazyCompile: ~getPayloadLength16 /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:238:21
+      1  100.0%          LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      1  100.0%            LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1    1.8%      LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    1.8%      LazyCompile: ~processCallback zlib.js:497:25
+      1    1.8%      LazyCompile: ~parsePattern /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/robots-parser/Robots.js:119:22
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/robots-parser/Robots.js:265:30
+      1  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%            LazyCompile: ~Robots.addRule /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/robots-parser/Robots.js:262:37
+      1    1.8%      LazyCompile: ~parseConnectionString /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/uri_parser.js:531:31
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/uri_parser.js:83:35
+      1  100.0%          LazyCompile: ~onresolve dns.js:197:19
+      1    1.8%      LazyCompile: ~p.resource /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1463:24
+      1  100.0%        LazyCompile: ~Crawler.processURL /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:759:40
+      1  100.0%          LazyCompile: ~Crawler.start /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:435:35
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/crawler.js:10:40
+      1    1.8%      LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%        LazyCompile: ~Crawler /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:29:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/crawler.js:10:40
+      1  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1    1.8%      LazyCompile: ~onOpen /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:131:20
+      1  100.0%        RegExp: [A-Za-z0-9\/+]
+      1  100.0%          LazyCompile: ~setSocket /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:138:12
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:603:21
+      1    1.8%      LazyCompile: ~messageHandler /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connect.js:339:26
+      1  100.0%        LazyCompile: ~emit events.js:173:44
+      1  100.0%          LazyCompile: ~processMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connection.js:380:24
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connection.js:441:18
+      1    1.8%      LazyCompile: ~json /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:239:25
+      1  100.0%        LazyCompile: ~store /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/controllers/SiteController.js:30:16
+      1  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%            node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.8%      LazyCompile: ~getRawBody /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/raw-body/index.js:67:21
+      1  100.0%        LazyCompile: ~read /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/body-parser/lib/read.js:38:15
+      1  100.0%          LazyCompile: ~jsonParser /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/body-parser/lib/types/json.js:98:30
+      1  100.0%            LazyCompile: ~handle /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/router/layer.js:86:49
+      1    1.8%      LazyCompile: ~executeWriteOperation /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/server.js:459:31
+      1  100.0%        LazyCompile: ~insert /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/server.js:390:9
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/topology.js:964:60
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sdam/topology.js:444:7
+      1    1.8%      LazyCompile: ~endSession /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/sessions.js:113:13
+      1  100.0%        LazyCompile: ~executeCallback /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/operations/execute_operation.js:57:29
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/operations/insert_one.js:26:43
+      1  100.0%            LazyCompile: ~handleCallback /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/utils.js:124:30
+      1    1.8%      LazyCompile: ~eachOf /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:553:20
+      1  100.0%        LazyCompile: ~awaitable /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:206:28
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:1917:16
+      1  100.0%            LazyCompile: ~every /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:2360:19
+      1    1.8%      LazyCompile: ~destroySSL _tls_wrap.js:548:20
+      1  100.0%        LazyCompile: ~processImmediate internal/timers.js:396:28
+      1    1.8%      LazyCompile: ~createDebug /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/https-proxy-agent/node_modules/debug/src/common.js:63:23
+      1  100.0%        Eval: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/https-proxy-agent/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:864:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      1    1.8%      LazyCompile: ~createDebug /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/debug/src/debug.js:63:21
+      1  100.0%        Eval: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/finalhandler/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:864:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      1    1.8%      LazyCompile: ~clearIncoming _http_server.js:620:23
+      1  100.0%        LazyCompile: ~resOnFinish _http_server.js:633:21
+      1  100.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:685:18
+      1    1.8%      LazyCompile: ~_send _http_outgoing.js:243:49
+      1  100.0%        LazyCompile: ~write_ _http_outgoing.js:592:16
+      1  100.0%          LazyCompile: ~end _http_outgoing.js:689:45
+      1  100.0%            LazyCompile: ~send /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/express/lib/response.js:107:25
+      1    1.8%      LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/WebSocketTransport.js:42:42
+      1  100.0%          LazyCompile: ~onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      1  100.0%            LazyCompile: ~emit events.js:173:44
+      1    1.8%      LazyCompile: ~_onLifecycleEvent /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:153:20
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:55:44
+      1  100.0%          LazyCompile: ~emit events.js:173:44
+      1  100.0%            LazyCompile: ~_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:190:13
+      1    1.8%      LazyCompile: ~_onFrameNavigated /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:232:20
+      1  100.0%        LazyCompile: ~_handleFrameTree /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:175:19
+      1  100.0%          LazyCompile: ~initialize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:58:19
+      1  100.0%            /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1    1.8%      LazyCompile: ~_ensureIsolatedWorld /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/FrameManager.js:266:29
+      1  100.0%        /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%          node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    1.8%      LazyCompile: ~TLSSocket._wrapHandle _tls_wrap.js:495:43
+      1  100.0%        LazyCompile: ~TLSSocket _tls_wrap.js:360:19
+      1  100.0%          LazyCompile: ~connect _tls_wrap.js:1375:35
+      1  100.0%            LazyCompile: ~makeConnection /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connect.js:225:24
+      1    1.8%      LazyCompile: ~Response /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:531:14
+      1  100.0%        LazyCompile: ~_onResponseReceived /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/NetworkManager.js:265:22
+      1  100.0%          LazyCompile: *_onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Connection.js:93:19
+      1  100.0%            LazyCompile: *onMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/event-target.js:119:23
+      1    1.8%      LazyCompile: ~Promise /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bluebird/js/release/promise.js:70:17
+      1  100.0%        LazyCompile: ~fillTypes /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bluebird/js/release/promise.js:755:23
+      1  100.0%          LazyCompile: ~module.exports /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bluebird/js/release/promise.js:2:26
+      1  100.0%            Eval: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bluebird/js/release/bluebird.js:1:1
+      1    1.8%      LazyCompile: ~Page /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Page.js:60:14
+      1  100.0%        LazyCompile: ~create /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Page.js:46:22
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Target.js:74:17
+      1  100.0%            node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.8%      LazyCompile: ~Module.load internal/modules/cjs/loader.js:803:33
+      1  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:667:24
+      1  100.0%          LazyCompile: ~Module.runMain internal/modules/cjs/loader.js:1029:26
+      1  100.0%            Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.8%      LazyCompile: ~Db.collection /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/db.js:407:35
+      1  100.0%        LazyCompile: ~NativeCollection.onOpen /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:42:45
+      1  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongoose/lib/connection.js:667:28
+      1  100.0%            LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/operations/execute_operation.js:75:7
+      1    1.8%      LazyCompile: ~Crawler.start /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:435:35
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/crawler.js:10:40
+      1  100.0%          /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%            LazyCompile: ~getAllUrls /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/src/crawler.js:9:13
+      1    1.8%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:928:49
+      1  100.0%        /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%          LazyCompile: ~Crawler.discoverResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:908:47
+      1  100.0%            LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+      1    1.8%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1095:51
+      1  100.0%        LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:1921:25
+      1  100.0%          LazyCompile: ~eachOfArrayLike /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:481:29
+      1  100.0%            LazyCompile: ~eachOf /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/async/dist/async.js:553:20
+      1    1.8%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/pool.js:419:41
+      1  100.0%        LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:66:35
+      1    1.8%      LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/auth/scram.js:238:66
+      1  100.0%        LazyCompile: ~_callback /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connect.js:319:21
+      1  100.0%          LazyCompile: ~messageHandler /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/mongodb/lib/core/connection/connect.js:339:26
+      1  100.0%            LazyCompile: ~emit events.js:173:44
+      1    1.8%      LazyCompile: *p.is /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1263:18
+      1  100.0%        LazyCompile: ~p.normalizeHostname /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1949:33
+      1  100.0%          LazyCompile: ~p.normalize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/urijs/src/URI.js:1922:25
+      1  100.0%            LazyCompile: ~Crawler.cleanExpandResources /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:858:51
+      1    1.8%      Eval: ~<anonymous> internal/bootstrap/loaders.js:1:1
+      1    1.5%    LazyCompile: ~getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+      1  100.0%      LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      1  100.0%        LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1  100.0%          LazyCompile: *Writable.write _stream_writable.js:282:36
+      1  100.0%            LazyCompile: ~socketOnData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:863:22
+
+     66    1.3%  node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     66  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+     66  100.0%      LazyCompile: ~fromStringFast buffer.js:397:24
+     66  100.0%        LazyCompile: ~fromString buffer.js:416:20
+     66  100.0%          LazyCompile: ~from buffer.js:282:28
+     66  100.0%            LazyCompile: ~_screenshotTask /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/puppeteer/lib/Page.js:928:24
+
+     65    1.3%  void node::StreamBase::JSMethod<&node::StreamBase::Writev>(v8::FunctionCallbackInfo<v8::Value> const&)
+     65  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+     65  100.0%      LazyCompile: ~writevGeneric internal/stream_base_commons.js:111:23
+     65  100.0%        LazyCompile: ~Socket._writeGeneric net.js:750:42
+     65  100.0%          LazyCompile: ~Socket._writev net.js:782:36
+     65  100.0%            LazyCompile: ~doWrite _stream_writable.js:425:17
+
+     61    1.2%  void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     61  100.0%    v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+     56   91.8%      LazyCompile: ~toString buffer.js:753:46
+     25   44.6%        LazyCompile: ~Crawler.queueLinkedItems /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1025:46
+     25  100.0%          LazyCompile: ~<anonymous> /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/crawler.js:1610:24
+     25  100.0%            LazyCompile: ~FetchQueue.update /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/simplecrawler/lib/queue.js:212:40
+     14   25.0%        LazyCompile: *_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+     14  100.0%          LazyCompile: *Writable.write _stream_writable.js:282:36
+     14  100.0%            LazyCompile: ~socketOnData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/websocket.js:863:22
+     10   17.9%        LazyCompile: ~dataMessage /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:392:14
+     10  100.0%          LazyCompile: ~getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+     10  100.0%            LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      6   10.7%        LazyCompile: *getData /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:322:10
+      6  100.0%          LazyCompile: ~startLoop /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:119:12
+      6  100.0%            LazyCompile: ~_write /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/ws/lib/receiver.js:69:9
+      1    1.8%        /home/vitor/.nvm/versions/node/v12.14.1/bin/node
+      1  100.0%          LazyCompile: ~find_package_json_with_name /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/require_optional/index.js:27:43
+      1  100.0%            LazyCompile: ~require_optional /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/require_optional/index.js:65:32
+      5    8.2%      LazyCompile: ~slice buffer.js:585:12
+      5  100.0%        LazyCompile: ~toString buffer.js:753:46
+      4   80.0%          LazyCompile: ~readFileSync fs.js:339:22
+      4  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:964:37
+      1   20.0%          LazyCompile: ~deserializeObject /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bson/lib/bson/parser/deserializer.js:43:33
+      1  100.0%            LazyCompile: ~deserialize /home/vitor/Documentos/RockStage/chorus-diff-sites/backend/node_modules/bson/lib/bson/parser/deserializer.js:19:27
+

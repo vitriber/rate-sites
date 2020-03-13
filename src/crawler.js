@@ -2,7 +2,7 @@ var Crawler = require('simplecrawler');
 var port = 80;
 var exclude = ['gif', 'jpg', 'jpeg', 'png', 'ico', 'bmp', 'ogg', 'webp',
   'mp4', 'webm', 'mp3', 'ttf', 'woff', 'json', 'rss', 'atom', 'gz', 'zip',
-  'rar', '7z', 'css', 'js', 'gzip', 'exe', 'svg', 'xml'];
+  'rar', '7z', 'css', 'js', 'gzip', 'exe', 'svg', 'xml', 'eot'];
 var exts = exclude.join('|');
 
 module.exports = {
@@ -32,12 +32,12 @@ module.exports = {
           return;
         }
 
-        console.log(`> Page found ${item.url}`);
+        // console.log(`> Page found ${item.url}`);
         pages.push(item.url); // Add URL to the array of pages
       });
 
       crawler.on('complete', () => {
-        console.log('> Process completed');
+        // console.log('> Process completed');
         //console.log(pages);
         resolve(pages)
       });
