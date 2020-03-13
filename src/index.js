@@ -1,21 +1,31 @@
+
 require("dotenv").config();
 
-const express = require('express');
-const mongoose = require('mongoose');
-const morgan = require('morgan');
-const cors = require('cors');
-const routes = require('./routes')
-const app = express();
+const { connectToDatabase } = require('./models');
+const createApp = require('./app');
 
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+const port = process.env.PORT || 4444;
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
-app.use(routes);
-app.use(morgan("dev"));
+const handleStartServerFailure = (err) => {
+    console.error('Failed to start server', err);
+    process.exit(1);
+};
 
-app.listen(process.env.PORT || 4444);
+const startServer = async () => {
+    try {
+        await connectToDatabase();
+
+        const app = createApp();
+
+        app.listen(port, err => {
+            if (err) {
+                handleStartServerFailure(err);
+            }
+            console.error(`Server is listening on port ${port}`);
+        });
+    } catch (err) {
+        handleStartServerFailure(err)
+    }
+}
+
+startServer();
