@@ -1,21 +1,7 @@
 const Site = require('../models/Site');
 const GetSites = require('../crawler');
 const GetImages = require('../screenshot');
-const mkdirp = require('mkdirp');
 const puppeteer = require('puppeteer');
-//const {chromium, firefox, webkit} = require('playwright');
-
-// Create directory if not exist (function)
-// const GenerateDirectory = async (directory) => {
-//     const dir = "./src/images/"
-//     const link = directory.substr(8);
-//     const finaldir = dir.concat(link);
-
-//     mkdirp(finaldir, function (err) {
-//         if (err) console.error(err)
-//         else console.log('Done!')
-//     });
-// };
 
 module.exports = {
     async index(request, response) {
@@ -38,7 +24,7 @@ module.exports = {
         );
 
 
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
         //const browser = await chromium.launch();
 
         const [firstSiteImages, secondSiteImages] = await Promise.all([

@@ -1,7 +1,8 @@
+const AWS = require('aws-sdk');
+const config = require('../config');
+
 module.exports = {
     async upload(file, params = {}) {
-        const AWS = require('aws-sdk');
-        const config = require('../config');
 
         const awsS3Client = new AWS.S3({
             signatureVersion: 'v4',
