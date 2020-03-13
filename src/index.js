@@ -18,4 +18,4 @@ app.use(express.urlencoded({ extended: true}));
 app.use(routes);
 app.use(morgan("dev"));
 
-app.listen(4444);
+app.listen(process.env.PORT || 4444);
