@@ -46,7 +46,7 @@ module.exports = {
             return u.pathname;
         }
 
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
         
         const processingSitesMap = sitesMap.map(async siteMap => {
             const sourceImage = await GetImages.getImage(
