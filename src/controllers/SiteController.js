@@ -14,58 +14,81 @@ module.exports = {
     },
 
     async store(request, response) {
-        const { linkFirst } = request.body;
-        const { linkSecond } = request.body;
+        //Resgatando o Sitemap das urls inseridas
+        const { SourceHostname } = request.body;
+        const { TargetHostname } = request.body;
 
-
-        const [sitemapFirst, sitemapSecond] = await Promise.all([
-            GetSites.getAllUrls(linkFirst),
-            GetSites.getAllUrls(linkSecond)]
+        const sitemapFirst = await Promise.resolve(
+            GetSites.getAllUrls(SourceHostname)
         );
 
+        // Criando a estrutura de dados do sitemap
+        const sitesMap = sitemapFirst.map(link => {
+            return {
+                sourceUrl: link,
+                sourceImage: null,
+                targetUrl: null,
+                targetImage:null,
+                pathName: null
+            };
+        });
 
-        const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
-        //const browser = await chromium.launch();
+        // Resgatando ScreenShot das imagens e salvando no S3
+        const generateTargetUtl = (url, newHost) => {
+                const u = new URL(url)
+                const ul = new URL(newHost)
+                u.host = ul.host;
+                return u.toString()
+        }
 
-        const [firstSiteImages, secondSiteImages] = await Promise.all([
-            GetImages.getImages(sitemapFirst, linkFirst, browser),
-            GetImages.getImages(sitemapSecond, linkSecond, browser),
-        ]);
+        const generatePathName = (url) => {
+            const u = new URL(url)
+            return u.pathname;
+        }
+
+        const browser = await puppeteer.launch();
+        
+        const processingSitesMap = sitesMap.map(async siteMap => {
+            const sourceImage = await GetImages.getImage(
+                siteMap.sourceUrl, 
+                SourceHostname, 
+                browser,
+            );
+
+            const targetUrl = generateTargetUtl(siteMap.sourceUrl, TargetHostname);
+
+            const targetImage = await GetImages.getImage(
+                targetUrl, 
+                TargetHostname, 
+                browser,
+            );
+
+            const pathName = generatePathName(siteMap.sourceUrl);
+
+            return {
+                ...siteMap,
+                sourceImage,
+                targetUrl,
+                targetImage,
+                pathName
+            };
+        });
+
+        const sourceImageSitesMap = await Promise.all(processingSitesMap);
+
+        //console.log(sourceImageSitesMap);
+        
     
         await browser.close();
 
-        console.log('Finished save all images');
+        console.log('> Finished save all images');
 
-        const { name: namesFirst, url: urlFirst, urlScreenshot: urlScreenshotFirst } = firstSiteImages.reduce( ( accumulator, item ) => {
-            Object.keys( item ).forEach( key => {
-                accumulator[ key ] = ( accumulator[ key ] || [] ).concat( item[ key ] ) 
-            } )
-            return accumulator
-        }, {} );
-
-        const { name: namesSecond, url: urlSecond, urlScreenshot: urlScreenshotSecond } = secondSiteImages.reduce( ( accumulator, item ) => {
-            Object.keys( item ).forEach( key => {
-                accumulator[ key ] = ( accumulator[ key ] || [] ).concat( item[ key ] ) 
-            } )
-            return accumulator
-        }, {} );
-        
+       // Salvando os dados no model
 
         const site = await Site.create({
-            linkFirst,
-            linkSecond,
-            pagesFirst: sitemapFirst,
-            pagesSecond: sitemapSecond,
-            imagesFirst:{
-                name: namesFirst,
-                url: urlFirst,
-                urlScreenshot: urlScreenshotFirst,
-            },
-            imagesSecond:{
-                name: namesSecond,
-                url: urlSecond,
-                urlScreenshot: urlScreenshotSecond,
-            }
+            SourceHostname,
+            TargetHostname,
+            Screnshots: sourceImageSitesMap,
         })
 
 
