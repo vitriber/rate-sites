@@ -1,6 +1,7 @@
 const Site = require('../models/Site');
 const GetSites = require('../crawler');
 const GetImages = require('../screenshot');
+const GetPageSpeed = require('../pagespeed');
 const puppeteer = require('puppeteer');
 
 module.exports = {
@@ -14,13 +15,33 @@ module.exports = {
     },
 
     async store(request, response) {
-        //Resgatando o Sitemap das urls inseridas
+        
         const { SourceHostname } = request.body;
         const { TargetHostname } = request.body;
+
+        //Inserindo Pagespeed
+
+        console.log('> Resgatando PageSpeed das Páginas...');
+
+        const SourceHostScore = await Promise.resolve(
+            GetPageSpeed.getPageSpeed(SourceHostname)
+        );
+
+        const TargetHostScore = await Promise.resolve(
+            GetPageSpeed.getPageSpeed(TargetHostname)
+        );
+
+        console.log('> PageSpeed Coletado...');
+
+        //Resgatando o Sitemap das urls inseridas
+
+        console.log('> Coletando SiteMap...')
 
         const sitemapFirst = await Promise.resolve(
             GetSites.getAllUrls(SourceHostname)
         );
+
+        console.log('> Sitemap Coletado');
 
         // Criando a estrutura de dados do sitemap
         const sitesMap = sitemapFirst.map(link => {
@@ -34,6 +55,7 @@ module.exports = {
         });
 
         // Resgatando ScreenShot das imagens e salvando no S3
+        console.log('> Resgatando ScreenShot das imagens e salvando no S3....');
         const generateTargetUtl = (url, newHost) => {
                 const u = new URL(url)
                 const ul = new URL(newHost)
@@ -75,19 +97,18 @@ module.exports = {
         });
 
         const sourceImageSitesMap = await Promise.all(processingSitesMap);
-
-        //console.log(sourceImageSitesMap);
-        
     
         await browser.close();
 
-        console.log('> Finished save all images');
+        console.log('> Imagens Salvas com sucesso!');
 
        // Salvando os dados no model
 
         const site = await Site.create({
             SourceHostname,
             TargetHostname,
+            SourceHostScore,
+            TargetHostScore,
             Screnshots: sourceImageSitesMap,
         })
 

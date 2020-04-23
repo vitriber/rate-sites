@@ -10,6 +10,9 @@ module.exports = {
       //console.log('Start process');
       const page = await browser.newPage();
 
+      // Configure the navigation timeout
+      await page.setDefaultNavigationTimeout(0);
+
       await page.goto(`${url}`);
       await page.setViewport({ width: 1080, height: 1080 });
 
