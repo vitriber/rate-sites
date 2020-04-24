@@ -13,7 +13,7 @@ module.exports = {
     const { data } = await psi(url);
     result.speedScoreMobile = data.lighthouseResult.categories.performance.score;
 
-    //console.log(data.lighthouseResult.audits['speed-index'].score);
+    result.speedIndexMobile = data.lighthouseResult.audits['speed-index'].score;
 
     const data2 = await psi(url, {
       nokey: 'true',
@@ -21,6 +21,7 @@ module.exports = {
     });
 
     result.speedScoreDesktop = data2.data.lighthouseResult.categories.performance.score;
+    result.speedIndexDesktop = data2.data.lighthouseResult.audits['speed-index'].score;
 
     return result;
   }
